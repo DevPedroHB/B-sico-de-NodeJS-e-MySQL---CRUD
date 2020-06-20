@@ -1,0 +1,25 @@
+{
+  "name": "curso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevPedroHB/Basico-de-NodeJS-e-MySQL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevPedroHB/Basico-de-NodeJS-e-MySQL/issues"
+  },
+  "homepage": "https://github.com/DevPedroHB/Basico-de-NodeJS-e-MySQL#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-status": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.13"
+  }
+}
