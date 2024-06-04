@@ -1,18 +1,22 @@
 module.exports = {
-    development: {
-        database: {
-            host: 'localhost',
-            port: 3306,
-            name: 'cursoNodeMySQL',
-            dialect: 'mysql',
-            user: 'root',
-            password: '1234'
-        }
+  development: {
+    database: {
+      dialect: "mysql",
+      host: process.env.DB_HOST,
+      port: process.env.DB_PORT,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      name: process.env.DB_DATABASE,
     },
-    production: {
-        database: {
-            host: process.env.DB_HOST,
-            host: process.env.DB_PORT
-        }
-    }
-}
+  },
+  production: {
+    database: {
+      dialect: "mysql",
+      host: process.env.DB_HOST,
+      port: process.env.DB_PORT,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      name: process.env.DB_DATABASE,
+    },
+  },
+};
